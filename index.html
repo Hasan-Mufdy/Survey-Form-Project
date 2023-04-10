@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+
+
+<h1 id="title">
+    test form
+    </h1>
+    <p id="description">this project is a simple forms template</p>
+    
+    <form id="survey-form">
+      <label id="name-label">Name: <input placeholder="enter your name" required type="text" id="name"></label>
+      <label id="email-label">Email: <input placeholder="enter your email" required type="email" id="email"></label>
+      <label id="number-label">Number: <input placeholder="enter your number" required type="number" id="number" min="1" max="100000000000"></label>
+      
+    <!--  -->
+     <label for="dropdown">Please select one of the following:
+              <select id="dropdown" name="dropdown">
+                <option value="">(select one)</option>
+                <option value="1">option-1</option>
+                <option value="2">option-2</option>
+                <option value="3">option-3</option>
+              </select>
+            </label>
+            <br><br>
+    <!--  -->
+     <label for="radio-button-1"><input  type="radio"  id="radio-button"name="radio-button" class="inline" value="1" /> radio button 1</label>
+    <!-- <br> -->
+     <label for="radio-button-2"><input  type="radio"  id="radio-button"name="radio-button" class="inline" value="2"/> radio button 2</label>
+    <!--  -->
+    
+    <label for="checkbox"><input value="1" id="checkbox" type="checkbox" required name="checkbox" class="inline" />checkbox 1 (required)</label>
+    
+    <label for="checkbox"><input value="2" id="checkbox" type="checkbox" name="checkbox" class="inline" />checkbox 2 (not required)</label>
+    <!--  -->
+    <label for="paragraph">write here whatever you want:
+              <textarea id="paragraph" name="paragraph" rows="3" cols="30"></textarea>
+    <!--  -->
+    <input id="submit" type="submit" value="Submit" />
+    </form>
+    
+</body>
+</html>
